@@ -1,0 +1,5 @@
+wrapper_url: 'git@github.com:freia-lab/e3-smbv100a.git'
+wrapper_git_desc: '2c3c377d8a46043726c7c7df836e67b97803cf44'
+wrapper_diffs: [ ]
+module_git_desc: '2c3c377d8a46043726c7c7df836e67b97803cf44'
+module_diffs: [ "?? smbv100a/O.7.0.7_linux-x86_64-debug/",  "?? smbv100a/O.7.0.7_linux-x86_64/", ]
