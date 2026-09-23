@@ -9,4 +9,4 @@ drvAsynIPPortConfigure("PORT1","192.168.10.34:5025",0,0,0)
 epicsEnvSet("STREAM_PROTOCOL_PATH","$(smb100a_DB)")
 
 #Load your database defining the EPICS records
-dbLoadRecords("smbv100a.db", "PORT=PORT1,P=VSIG-GEN,DEV=Ref")
+dbLoadRecords("smbv100a.db", "PORT=PORT1,P=VSIG-GEN,DEV=SMBV100A")
