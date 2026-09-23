@@ -25,7 +25,7 @@ EXCLUDE_ARCHS += linux-corei7-poky
 # Since this file (smbv100a.Makefile) is copied into
 # the module directory at build-time, these paths have to be relative
 # to that path
-APP := smbv100aApp
+APP := .
 APPDB := $(APP)/Db
 APPSRC := $(APP)/src
 
