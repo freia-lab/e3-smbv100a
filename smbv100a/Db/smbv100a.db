@@ -1,7 +1,7 @@
 record(waveform, "theotest_vsign_gen_id") {
    field (DESC, "Generator's id")
    field (DTYP, "stream")
-   field (INP, "@smb100a.proto get_id $(PORT)")
+   field (INP, "@smbv100a.proto get_id $(PORT)")
    field (FTVL, "CHAR")
    field (NELM, "100")
    field (PINI, "YES")
