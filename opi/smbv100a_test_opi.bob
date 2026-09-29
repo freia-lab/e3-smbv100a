@@ -1,65 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <widget type="label" version="2.0.0">
-    <name>Label</name>
-    <class>TITLE</class>
-    <text>TEST OPI</text>
-    <x use_class="true">20</x>
-    <y use_class="true">0</y>
-    <width>550</width>
-    <height use_class="true">50</height>
-    <font use_class="true">
-      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+  <width>870</width>
+  <height>410</height>
+  <widget type="group" version="3.0.0">
+    <name>SMBV100A Info</name>
+    <x>50</x>
+    <y>150</y>
+    <width>310</width>
+    <height>230</height>
+    <style>1</style>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="12.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+    <foreground_color>
+      <color name="BLACK-TEXT" red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <transparent use_class="true">true</transparent>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
+    <line_color>
+      <color red="51" green="150" blue="150">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_222</name>
+      <class>SECTION</class>
+      <text>Output Enabled</text>
+      <x>10</x>
+      <y>10</y>
+      <width>129</width>
+      <height>25</height>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_181</name>
+      <pv_name>VSIG-GEN:SMBV100A-Pwr:sRdV</pv_name>
+      <x>179</x>
+      <y>110</y>
+      <width>109</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_235</name>
+      <class>SECTION</class>
+      <text>Output Power (dBm)</text>
+      <x>10</x>
+      <y>110</y>
+      <width>129</width>
+      <height>25</height>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_182</name>
+      <pv_name>VSIG-GEN:SMBV100A-Freq:sRdV</pv_name>
+      <x>179</x>
+      <y>160</y>
+      <width>109</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_236</name>
+      <class>SECTION</class>
+      <text>Frequency (MHz)</text>
+      <x>10</x>
+      <y>160</y>
+      <width>129</width>
+      <height>25</height>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_183</name>
+      <pv_name>VSIG-GEN:SMBV100A-Pwr:cSetV.DRVH</pv_name>
+      <x>179</x>
+      <y>60</y>
+      <width>109</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_237</name>
+      <class>SECTION</class>
+      <text>Output Power Limit (dBm)</text>
+      <x>10</x>
+      <y>60</y>
+      <width>159</width>
+      <height>25</height>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>VSIG-GEN:SMBV100A-OUTP:cOn</pv_name>
+      <x>239</x>
+      <y>10</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_184</name>
+      <pv_name>VSIG-GEN:SMBV100A-OUTP:cOn</pv_name>
+      <x>179</x>
+      <y>10</y>
+      <width>40</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_1</name>
-    <text>Id Vsigngen</text>
-    <y>50</y>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update</name>
-    <pv_name>theotest_vsign_gen_id</pv_name>
-    <x>100</x>
-    <y>50</y>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_2</name>
-    <class>COMMENT</class>
-    <text>Some comment.</text>
-    <x>220</x>
-    <y>50</y>
-    <width>140</width>
+    <name>Label_226</name>
+    <text>Vektor Sig-Gen SMBV100A</text>
+    <x>80</x>
+    <y>30</y>
+    <width>622</width>
+    <height>50</height>
     <font>
-      <font name="Comment" family="Source Sans Pro" style="ITALIC" size="16.0">
+      <font family="Source Sans Pro" style="BOLD" size="36.0">
       </font>
     </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
   </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_1</name>
-    <pv_name>VSIG-GEN:SMBV100A-Freq:sRdV</pv_name>
-    <x>100</x>
-    <y>80</y>
+  <widget type="label" version="2.0.0">
+    <name>Label_233</name>
+    <text>Info</text>
+    <x>120</x>
+    <y>100</y>
+    <width>140</width>
+    <height>50</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="36.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
   </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_2</name>
-    <pv_name>VSIG-GEN:SMBV100A-OUTP:sOn</pv_name>
-    <x>100</x>
-    <y>110</y>
+  <widget type="label" version="2.0.0">
+    <name>Label_234</name>
+    <text>Output</text>
+    <x>470</x>
+    <y>100</y>
+    <width>140</width>
+    <height>50</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="36.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
   </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_3</name>
-    <pv_name>VSIG-GEN:SMBV100A-sId</pv_name>
-    <x>100</x>
-    <y>140</y>
+  <widget type="group" version="3.0.0">
+    <name>SMBV100A Output</name>
+    <x>390</x>
+    <y>150</y>
+    <width>400</width>
+    <height>230</height>
+    <style>1</style>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK-TEXT" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="51" green="150" blue="150">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_238</name>
+      <class>SECTION</class>
+      <text>Set Output Enabled</text>
+      <x>10</x>
+      <y>10</y>
+      <width>179</width>
+      <height>25</height>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_239</name>
+      <class>SECTION</class>
+      <text>Set Output Power Limit</text>
+      <x>10</x>
+      <y>60</y>
+      <width>219</width>
+      <height>25</height>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_240</name>
+      <class>SECTION</class>
+      <text>Set Output Power</text>
+      <x>10</x>
+      <y>110</y>
+      <width>189</width>
+      <height>25</height>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_241</name>
+      <class>SECTION</class>
+      <text>Set Frequency (MHz)</text>
+      <x>10</x>
+      <y>160</y>
+      <width>169</width>
+      <height>25</height>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>VSIG-GEN:SMBV100A-OUTP:cOn</pv_name>
+      <x>249</x>
+      <y>13</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>VSIG-GEN:SMBV100A-Pwr:cSetV.DRVH</pv_name>
+      <x>249</x>
+      <y>66</y>
+      <width>109</width>
+      <height>22</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_1</name>
+      <pv_name>VSIG-GEN:SMBV100A-Pwr:cSetV</pv_name>
+      <x>249</x>
+      <y>116</y>
+      <width>109</width>
+      <height>22</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_2</name>
+      <pv_name>VSIG-GEN:SMBV100A-Freq:cSetV</pv_name>
+      <x>249</x>
+      <y>166</y>
+      <width>109</width>
+      <height>22</height>
+    </widget>
   </widget>
 </display>

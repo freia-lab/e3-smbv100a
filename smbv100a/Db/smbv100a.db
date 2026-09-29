@@ -1,11 +1,8 @@
-record(waveform, "theotest_vsign_gen_id") {
-   field (DESC, "Generator's id")
-   field (DTYP, "stream")
-   field (INP, "@smbv100a.proto get_id $(PORT)")
-   field (FTVL, "CHAR")
-   field (NELM, "100")
-   field (PINI, "YES")
-}
+
+
+#############################################
+# Outputs
+#############################################
 
 record(lsi, "$(P):$(DEV)-sId") {
    field (DESC, "Generator's id")
@@ -57,4 +54,49 @@ record(bi, "$(P):$(DEV)-OUTP:sOn") {
    field (ONAM, "On")
    field (ZSV, "MAJOR")
    field (SCAN, "1 second")
+}
+
+record(ai, "$(P):$(DEV)-OUTP:lim") {
+   field (DESC, "Output Limit")
+   field (PINI, "YES")
+   field (EGU, "dBm")
+}
+
+
+
+#############################################
+# Commands and settings
+#############################################
+
+
+record (bo, "$(P):$(DEV)-OUTP:cOn") {
+   field (DESC, "Output Enabled")
+   field (DTYP, "stream")
+   field (OUT, "@smbv100a.proto set_outp $(PORT)")
+   field (ZNAM, "Off")
+   field (ONAM, "On")
+   field (ZSV, "MAJOR")
+}
+
+record (ao, "$(P):$(DEV)-Pwr:cSetV") {
+   field (DESC, "Output power")
+   field (EGU, "dBm")
+   field (DTYP, "stream")
+   field (LOPR, "-30")
+   field (HOPR, "27.0")
+   field (DRVH, "3")
+   field (PREC, "2")
+   field (OUT, "@smbv100a.proto set_out_pwr $(PORT)")
+}
+
+record (ao, "$(P):$(DEV)-Freq:cSetV") {
+   field (DESC, "Frequency")
+   field (EGU, "MHz")
+   field (LINR, LINEAR)
+   field (ASLO, "1e-6")
+   field (DTYP, "stream")
+   field (LOPR, "0.1")
+   field (HOPR, "12.75e3")
+   field (PREC, "9")
+   field (OUT, "@smbv100a.proto set_freq $(PORT)")
 }
